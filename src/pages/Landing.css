@@ -8,7 +8,7 @@
 .app-shell {
   position: relative;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
   background: linear-gradient(160deg, #cce6f8 0%, #b8daf4 35%, #a8d4f0 60%, #c0e4f8 100%);
 }
 
@@ -130,15 +130,14 @@
 
 .map-illustration {
   position: absolute;
-  left: 38%;
-  top: 11%;
-  width: 55%;
-  height: auto;
-  max-width: 980px;
+  left: 477px; /* x coordinate */
+  top: 121px;  /* y coordinate */
+  width: 895px;
+  height: 782px;
+  object-fit: contain;
   box-shadow: none;
   pointer-events: none;
   z-index: 0;
-  transform: none;
 }
 
 .hero-copy { z-index: 2; position: relative; }
