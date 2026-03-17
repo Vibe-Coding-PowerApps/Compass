@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../pages/Landing.css'
-import MapIllustration from '../assets/map-and-street-illustration.svg'
+// Load the illustration from the public folder at runtime
 import { Link } from 'react-router-dom'
 
 export default function Landing() {
@@ -38,7 +38,7 @@ export default function Landing() {
 
           <div className="hero-visual">
             <div className="visual-glow" />
-            <img src={MapIllustration} alt="Map illustration" className="map-illustration" />
+            <img src="/map-and-street-illustration.svg" alt="Map illustration" className="map-illustration" />
           </div>
         </div>
         </div>
