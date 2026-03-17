@@ -128,15 +128,25 @@
 }
 
 .map-illustration {
-  position: absolute;
-  left: 477px; /* x coordinate */
-  top: 121px;  /* y coordinate */
-  width: 895px;
-  height: 782px;
+  position: fixed; /* anchor to viewport so coordinates are exact */
+  left: 700px; /* moved left to avoid touching viewport edge */
+  top: 50%; /* vertically center in viewport */
+  transform: translateY(-50%); /* center element by its height */
+  width: 1200px; /* larger so it takes more real estate */
+  height: auto;
+  max-width: none;
   object-fit: contain;
   box-shadow: none;
   pointer-events: none;
   z-index: 0;
+  opacity: 0.99;
+  /* soft fade at edges to blend into background */
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 .hero-copy { z-index: 2; position: relative; }
