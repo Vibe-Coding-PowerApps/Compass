@@ -1,0 +1,36 @@
+/* Styles for Explore page */
+.explore-root {
+  font-family: 'Source Sans Pro', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #00101e;
+  /* Ensure full page height and allow scrolling for long content */
+  min-height: 2272px;
+  position: relative;
+  /* Use the exported PNG as the page background (served from /explore-background.png) */
+  background-image: url('/explore-full-background.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: scroll;
+  overflow: visible;
+}
+.explore-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+.explore-nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-weight: 700;
+  color: #0B3D68;
+}
+.explore-nav .brand img { width: 36px; height: 36px }
+.nav-links { display: flex; gap: 18px; align-items: center }
+.nav-link { color: #242424; font-size: 14px; text-decoration: none; font-family: 'Segoe UI', sans-serif }
+.nav-link.active { font-weight: 600 }
+
+/* Make sure absolute children don't create scrollbars unnecessarily */
+.explore-root > div { position: relative }
