@@ -38,7 +38,7 @@ export default function Landing() {
 
           <div className="hero-visual">
             <div className="visual-glow" />
-            <img src="/map-and-street-illustration.svg" alt="Map illustration" className="map-illustration" />
+          
           </div>
         </div>
         </div>
