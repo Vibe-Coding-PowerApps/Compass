@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1275 714" width="1275" height="714" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#CFEFFF" />
+      <stop offset="1" stop-color="#E6D2FF" />
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30" result="b" />
+      <feBlend in="SourceGraphic" in2="b" mode="screen" />
+    </filter>
+  </defs>
+
+  <!-- subtle backdrop that blends with page gradient -->
+  <rect width="100%" height="100%" fill="url(#bg)" />
+
+  <!-- faint map lanes -->
+  <g transform="translate(80,60) scale(1.0)">
+    <g opacity="0.18" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12">
+      <path d="M120 280 C220 240 320 240 420 280 S620 360 720 320" />
+      <path d="M40 340 C140 300 340 300 460 360 S700 420 860 380" />
+      <path d="M220 180 C300 150 420 150 520 190 S700 260 820 220" />
+    </g>
+
+    <!-- street labels -->
+    <g font-family="Segoe UI" font-size="14" fill="rgba(0,0,0,0.45)" transform="translate(0,0)">
+      <text x="360" y="160" transform="rotate(-12 360,160)">Power Automate St.</text>
+      <text x="720" y="300" transform="rotate(6 720,300)">Power Apps St.</text>
+      <text x="980" y="120" transform="rotate(8 980,120)">Power Pages St.</text>
+      <text x="940" y="420" transform="rotate(2 940,420)">Copilot Studio St.</text>
+    </g>
+
+    <!-- map bubble markers -->
+    <g opacity="0.95">
+      <g transform="translate(520,120)">
+        <circle r="28" fill="#6FBFFD" />
+        <circle r="12" fill="#fff" />
+      </g>
+      <g transform="translate(900,80)">
+        <circle r="28" fill="#B58AF6" />
+        <circle r="12" fill="#fff" />
+      </g>
+      <g transform="translate(760,280)">
+        <circle r="28" fill="#4FB8D0" />
+        <circle r="12" fill="#fff" />
+      </g>
+      <g transform="translate(1060,420)">
+        <circle r="28" fill="#E5C952" />
+        <circle r="12" fill="#fff" />
+      </g>
+    </g>
+
+    <!-- central paper map + hand/compass illustration (stylized) -->
+    <g transform="translate(580,240) rotate(-8)">
+      <rect x="-120" y="-80" width="240" height="160" rx="6" fill="#FFF" stroke="#F1F5FB" filter="url(#soft)"/>
+      <!-- mini map grid inside paper -->
+      <g transform="translate(-100,-60) scale(0.46)">
+        <rect width="400" height="260" fill="#F8FBFF" stroke="#E6EEF9" rx="4" />
+        <g stroke="#C7DFF6" stroke-width="6" fill="none">
+          <path d="M20 30 L380 30" />
+          <path d="M20 80 L380 80" />
+          <path d="M60 0 L60 260" />
+          <path d="M160 0 L160 260" />
+        </g>
+      </g>
+      <!-- simple hand + compass circle -->
+      <g transform="translate(90,40)">
+        <circle r="34" fill="#A3D5FF" stroke="#426DA0" stroke-width="6" />
+        <circle r="16" fill="#fff" />
+      </g>
+    </g>
+  </g>
+</svg>
