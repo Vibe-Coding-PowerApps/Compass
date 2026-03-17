@@ -8,7 +8,7 @@
 .app-shell {
   position: relative;
   min-height: 100vh;
-  overflow: visible;
+  overflow-x: hidden;
   background: linear-gradient(160deg, #cce6f8 0%, #b8daf4 35%, #a8d4f0 60%, #c0e4f8 100%);
 }
 
@@ -58,6 +58,7 @@
 }
 
 .hero-content {
+  position: relative;
   display: flex;
   gap: 32px;
   align-items: center;
@@ -128,15 +129,19 @@
 }
 
 .map-illustration {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  left: 38%;
+  top: 11%;
+  width: 55%;
   height: auto;
   max-width: 980px;
-  box-shadow: 0 14px 40px rgba(19,53,106,0.16);
+  box-shadow: none;
   pointer-events: none;
-  z-index: 1;
-  transform: translateY(-4%);
+  z-index: 0;
+  transform: none;
 }
+
+.hero-copy { z-index: 2; position: relative; }
 
 @media (max-width: 900px) {
   .hero-content { flex-direction: column; align-items: stretch; }
