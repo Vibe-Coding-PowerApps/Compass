@@ -32,9 +32,11 @@ export default function Landing() {
           <div className="hero-copy">
             <h1 className="hero-title">Compass</h1>
             <p className="hero-sub">
-              Compass is your organization&apos;s guiding light, helping both customers and employees navigate seamlessly through the vast landscape of processes, available resources, and much more.
-              <br/>
-              With Compass, clarity and direction are at your fingertips, ensuring everyone finds the right path within your organization.
+              Compass is your organization&apos;s guiding light, helping both<br/>
+              customers and employees navigate seamlessly through the vast<br/>
+              landscape of processes, available resources, and much more.<br/>
+              With Compass, clarity and direction are at your fingertips, ensuring<br/>
+              everyone finds the right path within your organization.
             </p>
             <div className="hero-cta">
               <Link to="/explore" className="btn-primary">Explore</Link>
