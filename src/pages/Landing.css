@@ -1,6 +1,9 @@
 .landing-root {
   width: 100%;
   min-height: 100vh;
+  /* Fix landing to viewport height and prevent page scrolling on home */
+  height: 100vh;
+  overflow: hidden;
   font-family: 'Segoe UI', system-ui, -apple-system, 'Source Sans Pro', sans-serif;
   color: #004C92;
 }
@@ -9,9 +12,12 @@
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background: radial-gradient(ellipse 56.67% 80.41% at 84.90% 92.77%, rgba(255,54,235,0.20) 0%, rgba(255,255,255,0) 100%),
-              radial-gradient(ellipse 78.51% 119.15% at 11.28% 16.11%, rgba(0,194,255,0.20) 0%, rgba(255,255,255,0) 100%),
-              #BCCDF9;
+  /* Use the home background image from public/ */
+  background-image: url('/home-background.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 .landing-hero {
