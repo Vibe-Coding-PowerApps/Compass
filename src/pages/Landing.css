@@ -51,13 +51,15 @@
 
 .nav-selector-bar {
   position: absolute;
-  width: 39px;
   height: 3px;
-  left: 12px;
+  left: 0;
   top: calc(100% - 6px);
   background: #0F6CBD !important;
   border-radius: 999px;
   box-shadow: 0 2px 8px rgba(15,108,189,0.25) !important;
+  transition: left 220ms cubic-bezier(.2,.9,.3,1), width 220ms cubic-bezier(.2,.9,.3,1);
+  will-change: left, width;
+  width: 39px; /* fallback */
 }
 
 .brand {

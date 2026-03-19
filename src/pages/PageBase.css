@@ -4,3 +4,47 @@
 }
 .page-header { display:flex; align-items:center; gap:16px; margin-bottom:24px }
 .page-header h2 { margin:0 }
+
+/* Learn page background using public/start-building.png */
+.learn-page {
+  background-image: url('/start-building.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  padding: 24px 64px 80px 64px;
+  color: #111;
+}
+
+.learn-page .nav { position: relative; z-index: 2 }
+
+.learn-blur-glass {
+  position: absolute;
+  left: 57px;
+  top: 50px;
+  width: 1328px;
+  height: 2658px;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Centered frosted card that matches the provided mock */
+.learn-card {
+  width: min(900px, 92%);
+  max-width: 920px;
+  background: rgba(255,255,255,0.86);
+  border-radius: 20px;
+  padding: 48px;
+  box-shadow: 0 12px 34px rgba(16,24,40,0.12);
+  border: 1px solid rgba(124,58,237,0.08);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.learn-card .page-header { color: inherit; }
+.learn-card p { color: #111; margin: 0; }
